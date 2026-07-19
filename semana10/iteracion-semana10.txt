@@ -1,0 +1,20 @@
+Iteración simple (semana 10)
+
+¿Qué 2 tareas del backlog harías primero?
+
+- Tarea 1: "Recibir alerta en Telegram cuando se registre un nuevo reporte." (prioridad 1)
+- Tarea 2: "Registrar una incidencia con fotos y descripción." (prioridad 2)
+
+¿Por qué son las más importantes?
+
+- La alerta en Telegram permite que el equipo reaccione rápidamente a nuevos reportes y comience el proceso de verificación.
+- El registro de incidencias con evidencia es la fuente de datos: sin reportes completos no hay información que revisar ni seguir.
+
+¿Qué significa para ti que una tarea esté “terminada”?
+
+Definición de Terminado (DoD) — criterios mínimos (al menos 3):
+
+1. Funciona: La funcionalidad implementada cumple el comportamiento esperado (p. ej., al registrar un reporte se crea el registro en la base de datos y se activa la notificación).
+2. Fue probada: Se realizaron pruebas básicas (manuales o automatizadas) que confirman el flujo principal y casos críticos.
+3. Quedó registrada en Git: El código y los cambios están comiteados, con mensaje claro y empujados al repositorio.
+4. Documentación mínima: Existe una nota o README con instrucciones de uso o despliegue para la funcionalidad.

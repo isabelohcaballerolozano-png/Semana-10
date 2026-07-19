@@ -1,0 +1,11 @@
+Backlog de la solución de veeduría (ordenado de mayor a menor prioridad):
+
+1) Como coordinador quiero recibir una alerta en Telegram cuando se registre un nuevo reporte para poder revisarlo de inmediato.
+
+2) Como ciudadano quiero registrar una incidencia con fotos y descripción para dejar evidencia del caso y facilitar la verificación.
+
+3) Como miembro del equipo quiero consultar y filtrar reportes por estado (nuevo, en revisión, cerrado) para organizar el seguimiento.
+
+4) Como coordinador quiero asignar un responsable a cada reporte para garantizar que alguien haga seguimiento.
+
+(Opcional) 5) Como ciudadano quiero recibir confirmación de recepción de mi reporte para saber que fue registrado.

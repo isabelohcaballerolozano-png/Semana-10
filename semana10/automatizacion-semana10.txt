@@ -1,0 +1,25 @@
+Automatización simple con n8n y Telegram
+
+Flujo propuesto:
+
+Evento que activa el flujo:
+- Se crea un nuevo reporte en la base de datos (o se recibe un webhook desde el formulario de reporte).
+
+Pasos del flujo en n8n (resumen):
+1. Webhook / Trigger: n8n recibe la notificación de nuevo reporte.
+2. Procesamiento: n8n extrae los campos relevantes (id del reporte, título, resumen, timestamp).
+3. Filtro/Enriquecimiento: opcionalmente valida que no haya campos sensibles en el mensaje a enviar.
+4. Acción: enviar mensaje a un chat o canal de Telegram mediante el nodo Telegram.
+
+Mensaje que se enviaría a Telegram:
+- "Nuevo reporte recibido: [ID: 1234] Título: ‘Bache en la calle X’. Revisar panel de veeduría para detalles." (incluir enlace al reporte si aplica)
+
+¿Qué información no debería enviarse por seguridad?
+- Nombres completos de personas afectadas.
+- Documentos de identidad, números de teléfono o direcciones exactas.
+- Fotografías que muestren información sensible.
+- Cualquier dato que permita identificar o ubicar a víctimas o denunciantes en riesgo.
+
+Notas de seguridad:
+- En Telegram enviar sólo un resumen y un enlace al sistema protegido donde los responsables con permiso puedan ver la información completa.
+- Asegurar que las credenciales de n8n y del bot de Telegram se mantengan en variables de entorno y no en texto plano.
